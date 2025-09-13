@@ -1,0 +1,13 @@
+a = int(input("Please Enter Your First Number:"))
+b = int(input("Please Enter Your Second Number:"))
+c =input("For Addition Enter (ADD), For Substruction Enter (SUB) For Mutiply Enter (X) And For Divison Enter (DIV):")
+if c == "ADD":
+    print(a + b)
+elif c == "SUB":
+    print(a - b)
+elif c == "X":
+    print(a*b)
+elif c == "DIV":
+    print(int(a/b))     
+else:
+    print("Please Enter the Value Properly")
