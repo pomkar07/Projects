@@ -1,0 +1,7 @@
+resin = int(input("How much resin do you have now:"))
+
+while resin >= 20:
+    resin = resin - 20
+    print(f"You have enough resin to claim the reward! - Remaining resin: {resin}")
+
+print("Not enought resin please explore the teyvat traveller")
