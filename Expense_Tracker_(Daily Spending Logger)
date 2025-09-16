@@ -1,0 +1,15 @@
+total = 0
+expenses = []
+
+while True:
+    expense = input("Enter your Expense (or 'Done' to finish): ")
+    if expense.lower() == 'done':
+        break
+    amt = int(input("Enter amount: "))
+    expenses.append((expense, amt))
+    total += amt
+
+print(f"You spent a total of {total}")
+print("Expense breakdown:")
+for name, amount in expenses:
+    print(f"{name} - {amount}")
