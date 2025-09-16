@@ -1,0 +1,5 @@
+Hilichurl = 10
+for hilichurl1 in range(1,11):
+    print(f"Defated Hilichurl number {hilichurl1}")
+    
+print("All Hilichruls defeated! victory in teyvat!")
