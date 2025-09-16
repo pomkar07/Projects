@@ -1,0 +1,39 @@
+tasks = []
+
+while True:
+    print("\nOptions: add | view | remove | exit")
+    choice = input("What do you want to do? ").lower()
+
+    if choice == "add":
+        new_task = input("Enter your task: ")
+        tasks.append(new_task)
+        print(f"Task '{new_task}' added.")
+
+    elif choice == "view":
+        if not tasks:
+            print("Your task list is empty")
+        else:
+            print("Your tasks:")
+            for i, task in enumerate(tasks, start=1):
+                print(f"{i}. {task}")
+
+    elif choice == "remove":
+        if not tasks:
+            print("No tasks to remove.")
+        else:
+            print("Tasks:")
+            for i, task in enumerate(tasks, start=1):
+                print(f"{i}. {task}")
+            task_num = int(input("Enter the number of the task to remove: "))
+            if 1 <= task_num <= len(tasks):
+                removed = tasks.pop(task_num - 1)
+                print(f"Task '{removed}' removed")
+            else:
+                print("Invalid task number.")
+
+    elif choice == "exit":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid option, please try again.")
