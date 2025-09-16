@@ -1,0 +1,9 @@
+import random
+wish = int(input("How many wishes do you want to make:"))
+rewards = ["3-star weapons","4-star weapons","4-star character","5-star charcter","5-star weapon"]
+
+for i in range(1, 1 + wish):
+    pull = random.choice(rewards)
+    print(f"wish {i}: You got {pull}!")
+
+print("All wish completed! Good Luck in Tayvet, Traveler") 
