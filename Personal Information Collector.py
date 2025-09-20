@@ -1,0 +1,11 @@
+print("Please enter your personal details:")
+name = input("Please enter your name: ")
+age = int(input("Please enter your age: "))
+email = input("Please enter your email: ")
+phone = input("Please enter your phone number: ")
+
+print("\n-- Your information --")
+print(f"Name: {name}")
+print(f"Age: {age}")
+print(f"Email: {email}")
+print(f"Phone number: {phone}")

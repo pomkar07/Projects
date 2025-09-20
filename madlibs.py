@@ -1,0 +1,11 @@
+name = input("Please enter your name: ")
+age = int(input("Please enter your age: "))
+food = input("Please enter your favourite food: ")
+hobby = input("Please enter your hobby: ")
+gender = input("Please enter your gender: ")
+
+print(f"Hi my name is {name}")
+print(f"I am {age} years old")
+print(f"My favourite food is {food}")
+print(f"My hobby is {hobby}")
+print(f"My gender is {gender}")
